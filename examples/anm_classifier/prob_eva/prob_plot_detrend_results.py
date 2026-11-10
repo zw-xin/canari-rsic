@@ -41,24 +41,24 @@ for i in range(test_ts_num):
 print("Test time series lengths: ", test_ts_len_all)
 
 # Input
-first_anm_type = 'lt'
-second_anm_type = 'lt'
+first_anm_type = 'll'
+second_anm_type = 'll'
 
 print('Results for first anomaly type: ', first_anm_type, ' and second anomaly type: ', second_anm_type)
 print('######################### RSIC #########################')
 false_alarm_rate_rsic, df_rsic_group = _process_detection_df_bl_10ts(
     all_test_ts_len=test_ts_len_all,
     csv_path_all=[
-        "saved_results/prob_eva/detrend_ts1_results_rsic_"+first_anm_type+"to"+second_anm_type+".csv",
-        "saved_results/prob_eva/detrend_ts2_results_rsic_"+first_anm_type+"to"+second_anm_type+".csv",
-        "saved_results/prob_eva/detrend_ts11_results_rsic_"+first_anm_type+"to"+second_anm_type+".csv",
-        "saved_results/prob_eva/detrend_ts4_results_rsic_"+first_anm_type+"to"+second_anm_type+".csv",
-        "saved_results/prob_eva/detrend_ts5_results_rsic_"+first_anm_type+"to"+second_anm_type+".csv",
-        "saved_results/prob_eva/detrend_ts6_results_rsic_"+first_anm_type+"to"+second_anm_type+".csv",
-        "saved_results/prob_eva/detrend_ts7_results_rsic_"+first_anm_type+"to"+second_anm_type+".csv",
-        "saved_results/prob_eva/detrend_ts8_results_rsic_"+first_anm_type+"to"+second_anm_type+".csv",
-        "saved_results/prob_eva/detrend_ts9_results_rsic_"+first_anm_type+"to"+second_anm_type+".csv",
-        "saved_results/prob_eva/detrend_ts10_results_rsic_"+first_anm_type+"to"+second_anm_type+".csv",
+        "saved_results/prob_eva/detrend_ts1_results_rsic_"+first_anm_type+"to"+second_anm_type+"_onlinestate.csv",
+        "saved_results/prob_eva/detrend_ts2_results_rsic_"+first_anm_type+"to"+second_anm_type+"_onlinestate.csv",
+        "saved_results/prob_eva/detrend_ts11_results_rsic_"+first_anm_type+"to"+second_anm_type+"_onlinestate.csv",
+        "saved_results/prob_eva/detrend_ts4_results_rsic_"+first_anm_type+"to"+second_anm_type+"_onlinestate.csv",
+        "saved_results/prob_eva/detrend_ts5_results_rsic_"+first_anm_type+"to"+second_anm_type+"_onlinestate.csv",
+        "saved_results/prob_eva/detrend_ts6_results_rsic_"+first_anm_type+"to"+second_anm_type+"_onlinestate.csv",
+        "saved_results/prob_eva/detrend_ts7_results_rsic_"+first_anm_type+"to"+second_anm_type+"_onlinestate.csv",
+        "saved_results/prob_eva/detrend_ts8_results_rsic_"+first_anm_type+"to"+second_anm_type+"_onlinestate.csv",
+        "saved_results/prob_eva/detrend_ts9_results_rsic_"+first_anm_type+"to"+second_anm_type+"_onlinestate.csv",
+        "saved_results/prob_eva/detrend_ts10_results_rsic_"+first_anm_type+"to"+second_anm_type+"_onlinestate.csv",
     ],
     evaluate_itv_type = True,
     plot_detection_map = False,
